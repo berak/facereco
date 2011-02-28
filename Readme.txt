@@ -8,29 +8,23 @@ vlc:
 		add a line containing just the word EXPORTS at the top, save under libvlc.def
 		then call: lib /DEF:libvlc.def   this will generate libvlc.lib.
 
-
 projects:
-	win32 vlc test, just a window:
+	opencv / vlc test, just a window:
 		vlc_min.cpp
 
 	opencv-hog detector, using vlc:
 		hog.cpp
-		VlcPlayer.cpp
-		VlcPlayer.h
+		VlcCapture.cpp
+		VlcCapture.h
 		
 	face reco 2.2 style, using vlc for input:
 		face22_vlc.cpp
 		FaceReco22.cpp
 		FaceReco22.h
-		VlcPlayer.cpp
-		VlcPlayer.h
-		
-	face reco 2.2 style, using opencv for input:
-		face22_opencv.cpp
-		face22_vlc.cpp
-		FaceReco22.cpp
-		FaceReco22.h
-		
+		VlcCapture.cpp
+		VlcCapture.h
+		VlcFaceReco.cpp
+		VlcFaceReco.h
 
 
 please create a data folder first (or point the path given to train to a valid one).
