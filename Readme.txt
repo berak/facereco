@@ -1,10 +1,9 @@
 vlc:
-	#	get latest vlc kit from http://nightlies.videolan.org/build/win32/last/
-		1.2.0, because it contains vlc_video_set_format_cb()
 	#	build libvlc.lib for vc.
 		open a konsole, call: dumpbin /EXPORTS libvlc.dll
 		either pipe that into a file(and remove anything but the funames),
-		or better, mark the region containing the function names with the mouse and copy/paste that.
+		or better, mark the region containing the function names with the mouse
+		and copy/paste that to an empty file.
 		add a line containing just the word EXPORTS at the top, save under libvlc.def
 		then call: lib /DEF:libvlc.def   this will generate libvlc.lib.
 
